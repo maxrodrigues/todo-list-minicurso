@@ -48,7 +48,7 @@ Escolha uma das opções abaixo:
     ```
 
 
-Abra seu navegador e acesse http://localhost:8080 para visualizar o aplicativo ToDoList.
+Abra seu navegador e acesse http://localhost:8000 para visualizar o aplicativo ToDoList.
 
 ## Conteúdo do Minicurso
 O minicurso consiste em várias etapas, cada uma delas abordando um aspecto diferente do desenvolvimento de um aplicativo ToDoList em Vue.js. O conteúdo do minicurso inclui:
