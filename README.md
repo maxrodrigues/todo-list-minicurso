@@ -32,6 +32,8 @@ Escolha uma das opções abaixo:
     ```bash
     docker-compose up -d
     ```
+
+- Aguarde alguns minutos até o container preparar o projeto.
     
 **OU manualmente:**
 
