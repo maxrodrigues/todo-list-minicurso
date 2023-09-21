@@ -25,7 +25,7 @@ Siga as etapas abaixo para configurar e executar o projeto do ToDoList em Vue.js
 
 Escolha uma das opções abaixo:
 
-# **Docker (RECOMENDADO):**
+## **Docker (RECOMENDADO):**
 
 - Execute o projeto através do `docker-compose`:
 
@@ -37,7 +37,7 @@ Escolha uma das opções abaixo:
 
 Abra seu navegador e acesse http://localhost:8000 para visualizar o aplicativo ToDoList.
     
-# **OU manualmente:**
+## **OU manualmente:**
 
 - Instale as dependências:
 
