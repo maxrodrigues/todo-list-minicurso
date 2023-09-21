@@ -1,7 +1,7 @@
 <template>
   <div class="header">
     <div>
-      <h1>TodoList</h1>
+      <h1>Lista de Tarefas</h1>
     </div>
   </div>
 </template>

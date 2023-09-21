@@ -28,15 +28,15 @@ export default {
       this.listTasks = [
         {
           name: "Assistir o melhor filme de 2023",
-          completted: false,
+          completed: false,
         },
         {
           name: "Assistir uma série em casa",
-          completted: false,
+          completed: false,
         },
         {
           name: "Arrumar a casa ",
-          completted: true,
+          completed: true,
         },
       ];
     },

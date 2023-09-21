@@ -4,13 +4,13 @@
     <div class="movies">
       <div :key="index" v-for="(movie, index) in movies" class="card">
         <img
-          :src="'https://image.tmdb.org/t/p/w500' + movie.poster_path"
+          :src="'https://image.tmdb.org/t/p/w500/yRRuLt7sMBEQkHsd1S3KaaofZn7.jpg'"
           alt="Poster"
           class="card-image"
         />
         <div>
-          <h2 class="card-title">{{ movie.title }}</h2>
-          <p>{{ movie.release_date }}</p>
+          <h2 class="card-title">Título do filme</h2>
+          <p>Data de lançamento</p>
         </div>
       </div>
     </div>
