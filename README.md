@@ -7,30 +7,46 @@ Bem-vindo ao Minicurso de Front-end, onde você aprenderá a projetar um aplicat
 Antes de começar, certifique-se de ter o seguinte instalado em seu ambiente de desenvolvimento:
 
 - Node.js: [Download e Instalação](https://nodejs.org/)
+- Docker / Docker Compose: [Download e Instalação](https://docs.docker.com/)
 
 ## Instruções de Uso
 
 Siga as etapas abaixo para configurar e executar o projeto do ToDoList em Vue.js:
 
-1. Clone este repositório:
+- Clone este repositório:
 
     ```bash
     git clone https://github.com/JoaoFGuinguer/TodoList-minicurso.git
     ```
-2. Navegue até o diretório do projeto:
+- Navegue até o diretório do projeto:
     ```bash
-    cd minicurso-todolist
+    cd TodoList-minicurso
     ```
-3. Instale as dependências:
+
+Escolha uma das opções abaixo:
+
+**Docker (RECOMENDADO):**
+
+- Execute o projeto através do `docker-compose`:
+
+    ```bash
+    docker-compose up -d
+    ```
+    
+**OU manualmente:**
+
+- Instale as dependências:
 
     ```bash
     yarn
     ```
-4. Inicie o servidor de desenvolvimento:
+- Inicie o servidor de desenvolvimento:
     ```bash
     yarn serve
     ```
-5. Abra seu navegador e acesse http://localhost:8080 para visualizar o aplicativo ToDoList.
+
+
+Abra seu navegador e acesse http://localhost:8080 para visualizar o aplicativo ToDoList.
 
 ## Conteúdo do Minicurso
 O minicurso consiste em várias etapas, cada uma delas abordando um aspecto diferente do desenvolvimento de um aplicativo ToDoList em Vue.js. O conteúdo do minicurso inclui:
