@@ -8080,6 +8080,11 @@ svgo@^1.0.0:
     unquote "~1.1.1"
     util.promisify "~1.0.0"
 
+sweetalert2@^11.7.29:
+  version "11.7.29"
+  resolved "https://registry.yarnpkg.com/sweetalert2/-/sweetalert2-11.7.29.tgz#3a6a5fabb72f74ae22e7922d075381bcfbf5338d"
+  integrity sha512-oXl//RcQGDWUZqU3fB6zq4qjHQYelIQ9FaJWucsH2tNkN9YGfk0XCAa836rfnV9mNOsaI18gWgIn0NFp0iXAcw==
+
 table@^5.2.3:
   version "5.4.6"
   resolved "https://registry.yarnpkg.com/table/-/table-5.4.6.tgz#1292d19500ce3f86053b05f0e8e7e4a3bb21079e"
