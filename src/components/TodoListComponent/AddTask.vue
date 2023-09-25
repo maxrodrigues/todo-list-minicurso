@@ -15,6 +15,7 @@
 </template>
 
 <script>
+import Swal from 'sweetalert2'
 export default {
   name: "add-task",
   data() {
@@ -24,8 +25,18 @@ export default {
   },
   methods: {
     addTask() {
-      this.$emit('addTask', this.value)
-      this.value = ''
+      if (this.value.length > 0) {
+        this.$emit('addTask', this.value)
+        this.value = ''
+        return;
+      }
+
+      Swal.fire(
+          'Houve um erro',
+          'O campo nova tarefa está vazio!',
+          'error'
+      )
+
     },
   },
 };
@@ -49,6 +60,7 @@ export default {
   font-size: 0.87rem;
   line-height: 1.5rem;
   font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .addTask__input {
@@ -58,5 +70,12 @@ export default {
   border-radius: 0.25rem;
   padding-left: 5px;
   font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
 }
+
+.addTask__input:focus {
+  outline: none;
+}
+
+
 </style>
