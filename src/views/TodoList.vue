@@ -23,8 +23,8 @@ export default {
 
 <style scoped>
 .todolist {
-  background-color: #0c0c0d;
-  color: #2c3e50;
+  background-image: linear-gradient(to bottom, #19191a, #2d2d4a, #483f7e, #6c50b2, #9b5de5);
+  color: #fff;
   display: flex;
   flex-direction: column;
   align-items: center;
