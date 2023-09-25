@@ -1,8 +1,10 @@
 <template>
   <div class="task">
-    <add-task></add-task>
+    <add-task @addTask="createNewTask"></add-task>
     <list-task
       :list-tasks="listTasks"
+      @deleteTask="deleteTask"
+      @changeTask="setList"
     ></list-task>
   </div>
 </template>
@@ -22,23 +24,31 @@ export default {
     };
   },
   methods: {
-    createNewTask() {},
-    deleteTask() {},
+    createNewTask(value) {
+      let newTask = {
+        name: value,
+        completed: false
+      }
+
+      this.listTasks.push(newTask)
+      this.setList()
+    },
+    setList() {
+      localStorage.setItem('todoList', JSON.stringify(this.listTasks))
+    },
+    deleteTask(index) {
+      this.listTasks.splice(index, 1)
+      this.setList()
+    },
     getList() {
-      this.listTasks = [
-        {
-          name: "Assistir o melhor filme de 2023",
-          completed: false,
-        },
-        {
-          name: "Assistir uma série em casa",
-          completed: false,
-        },
-        {
-          name: "Arrumar a casa ",
-          completed: true,
-        },
-      ];
+      const localStorageData = localStorage.getItem('todoList')
+
+      if (localStorageData && localStorageData.length > 0) {
+        this.listTasks = JSON.parse(localStorageData)
+        return
+      }
+
+      this.listTasks = [];
     },
   },
   mounted() {
