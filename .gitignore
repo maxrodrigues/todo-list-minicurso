@@ -21,3 +21,5 @@ pnpm-debug.log*
 *.njsproj
 *.sln
 *.sw?
+!/.docker/entrypoint.sh
+!/src/config/key.js
